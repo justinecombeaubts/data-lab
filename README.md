@@ -8,7 +8,7 @@ Mission client B3 Dev & Automatisation (Digital Campus) : automatiser la veille 
 
 | Rôle | Membre | Livrable |
 |---|---|---|
-| Cheffe de projet + Automaticienne | Justine� | L3 · Un outil fiable |
+| Cheffe de projet + Automaticienne | Justine | L3 · Un outil fiable |
 | Product owner | Christian B. | L1 · Le cadrage |
 | Développeur | Hans K. | L2 · Le moteur de tri |
 | Responsable qualité | Aristide P. | L4 · La recette |
