@@ -20,7 +20,7 @@ Mission client B3 Dev & Automatisation (Digital Campus) : automatiser la veille 
 | L1 · Le cadrage | ✅ Terminé | [`profile.md`](profile.md), [`livrables/Livrable1_Cadrage_DataLab.pdf`](livrables/Livrable1_Cadrage_DataLab.pdf) |
 | L2 · Le moteur de tri | ✅ Terminé | [`src/`](src/), [`test/tri.test.js`](test/tri.test.js) |
 | Interface web | ✅ Terminé | [`docs/`](docs/) (publiée par GitHub Pages) |
-| L3 · Un outil fiable | ⏳ À faire | |
+| L3 · Un outil fiable | 🟡 Workflow en place, à tester | [`.github/workflows/veille.yml`](.github/workflows/veille.yml) |
 | L4 · La recette | ⏳ À faire | |
 
 ## Choix technique
@@ -73,3 +73,19 @@ Page statique en HTML, CSS et JS pur (aucune dépendance, aucune clé) : `index.
 
 **Publier :** Settings → Pages → *Deploy from a branch* → `main` / `/docs`.
 **Voir en local :** `npx serve docs` (ou `python3 -m http.server -d docs`).
+
+## La mise à jour chaque matin (Livrable 3)
+
+GitHub Actions lance l'outil **du lundi au vendredi à 7 h (heure de Paris)** : tests, moteur de tri, commit du digest, republication du site. Personne n'a rien à faire.
+
+- **Heure d'été / d'hiver** : GitHub planifie en UTC, donc le workflow se déclenche à 5 h et 6 h UTC ; un garde-fou ne laisse passer que le premier passage après 7 h à Paris.
+- **Lancer à la main** (démo, test) : onglet *Actions* → *Veille DataLab* → *Run workflow*.
+- **Clé** : `OLLAMA_API_KEY` dans *Settings → Secrets and variables → Actions*, jamais dans le code.
+- **En cas d'échec** : le passage apparaît en rouge dans l'onglet *Actions* et GitHub prévient par e-mail ; le site garde le digest précédent.
+
+| Risque (slide 9) | Protection |
+|---|---|
+| Une source tombe | Les autres continuent (`Promise.allSettled`), la panne est notée dans le rapport du jour |
+| Le quota sature | 40 articles maximum, lots de 10, nouvelles tentatives après 2 s, 6 s, 15 s |
+| L'IA répond mal | Validation Zod : la réponse invalide est écartée et tracée dans `data/rejets.json` |
+| Chaque matin | Planification du lundi au vendredi à 7 h, clé dans les secrets GitHub |

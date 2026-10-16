@@ -1,0 +1,80 @@
+name: Veille DataLab
+
+on:
+  schedule:
+    # GitHub planifie en UTC : 5 h et 6 h UTC couvrent 7 h à Paris en été (UTC+2) comme en hiver (UTC+1).
+    # Le garde-fou ci-dessous ne laisse passer qu'un seul passage par jour.
+    - cron: '0 5,6 * * 1-5' # du lundi au vendredi
+  workflow_dispatch: # bouton « Run workflow » pour lancer à la main (démo, test)
+
+permissions:
+  contents: write # commiter le digest du jour
+  pages: write    # demander la republication du site
+
+concurrency:
+  group: veille-datalab
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Garde-fou horaire (un seul passage par matin, à partir de 7 h à Paris)
+        id: guard
+        run: |
+          heure=$(TZ=Europe/Paris date +%H)
+          aujourdhui=$(TZ=Europe/Paris date +%F)
+          deja=$(node -e "try{console.log(require('./docs/digest.json').date)}catch{console.log('')}")
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Lancement manuel : on y va."; echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$heure" -lt 7 ]; then
+            echo "Il est ${heure} h à Paris : trop tôt, le passage de 7 h suivra."; echo "run=false" >> "$GITHUB_OUTPUT"
+          elif [ "$deja" = "$aujourdhui" ]; then
+            echo "Le digest du ${aujourdhui} existe déjà."; echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Passage du matin (${heure} h à Paris)."; echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v5
+        if: steps.guard.outputs.run == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer
+        if: steps.guard.outputs.run == 'true'
+        run: npm ci
+
+      - name: Tests du moteur de tri
+        if: steps.guard.outputs.run == 'true'
+        run: npm test
+
+      - name: Lire les flux, noter avec l'IA, écrire le digest
+        if: steps.guard.outputs.run == 'true'
+        run: npm start
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+
+      - name: Enregistrer le digest du jour
+        if: steps.guard.outputs.run == 'true'
+        run: |
+          git config user.name "veille-datalab-bot"
+          git config user.email "veille-datalab-bot@users.noreply.github.com"
+          git add data docs/digest.json
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau à enregistrer."
+          else
+            git commit -m "chore: digest du $(TZ=Europe/Paris date +%F) [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Republier le site
+        if: steps.guard.outputs.run == 'true'
+        continue-on-error: true # le site sera de toute façon republié au prochain changement
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" --silent && echo "Republication demandée."
+        env:
+          GH_TOKEN: ${{ github.token }}
