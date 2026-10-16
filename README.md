@@ -21,7 +21,7 @@ Mission client B3 Dev & Automatisation (Digital Campus) : automatiser la veille 
 | L2 · Le moteur de tri | ✅ Terminé | [`src/`](src/), [`test/tri.test.js`](test/tri.test.js) |
 | Interface web | ✅ Terminé | [`docs/`](docs/) (publiée par GitHub Pages) |
 | L3 · Un outil fiable | 🟡 Workflow en place, à tester | [`.github/workflows/veille.yml`](.github/workflows/veille.yml) |
-| L4 · La recette | ⏳ À faire | |
+| L4 · La recette | 🟡 En cours | [`recette/journal.md`](recette/journal.md) |
 
 ## Choix technique
 
@@ -65,7 +65,7 @@ Réglages possibles (variables d'environnement) : `MIN_SCORE` (7), `MAX_DIGEST` 
 
 ## L'interface web (`docs/`)
 
-Page statique en HTML, CSS et JS pur (aucune dépendance, aucune clé) : `index.html`, `style.css`, `app.js`. Elle lit `docs/digest.json`, écrit par le moteur à chaque passage (le fichier actuel contient des **données d'exemple**).
+Page statique en HTML, CSS et JS pur (aucune dépendance, aucune clé) : `index.html`, `style.css`, `app.js`. Elle lit `docs/digest.json`, écrit par le moteur à chaque passage.
 
 - Synthèse du jour, une section par catégorie (sécurité, conformité, versions), article surprise à part.
 - Section repliable **« Articles écartés »** : tous les autres articles notés du jour (sous le seuil ou hors sujet), avec leur note et la raison de l'IA.
@@ -81,6 +81,7 @@ GitHub Actions lance l'outil **du lundi au vendredi à 7 h (heure de Paris)** : 
 
 - **Heure d'été / d'hiver** : GitHub planifie en UTC, donc le workflow se déclenche à 5 h et 6 h UTC ; un garde-fou ne laisse passer que le premier passage après 7 h à Paris.
 - **Lancer à la main** (démo, test) : onglet *Actions* → *Veille DataLab* → *Run workflow*.
+- **Après un réglage de `profile.md`** : cocher *« Recette : renoter aussi les articles déjà vus »* pour mesurer l'effet sur les articles du jour (voir [`recette/journal.md`](recette/journal.md)).
 - **Clé** : `OLLAMA_API_KEY` dans *Settings → Secrets and variables → Actions*, jamais dans le code.
 - **En cas d'échec** : le passage apparaît en rouge dans l'onglet *Actions* et GitHub prévient par e-mail ; le site garde le digest précédent.
 

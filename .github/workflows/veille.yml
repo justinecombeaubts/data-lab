@@ -6,6 +6,11 @@ on:
     # Le garde-fou ci-dessous ne laisse passer qu'un seul passage par jour.
     - cron: '0 5,6 * * 1-5' # du lundi au vendredi
   workflow_dispatch: # bouton « Run workflow » pour lancer à la main (démo, test)
+    inputs:
+      renoter:
+        description: "Recette : renoter aussi les articles déjà vus (après un réglage de profile.md)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # commiter le digest du jour
@@ -57,6 +62,7 @@ jobs:
         run: npm start
         env:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          IGNORE_SEEN: ${{ inputs.renoter && '1' || '0' }}
 
       - name: Enregistrer le digest du jour
         if: steps.guard.outputs.run == 'true'

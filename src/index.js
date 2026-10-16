@@ -10,6 +10,7 @@ import { dedupe, parseResponse, buildDigest, toMarkdown, toWebDigest, MIN_SCORE 
 const MAX_AGE_HOURS = Number(process.env.MAX_AGE_HOURS || 72); // 72 h : le digest du lundi couvre le week-end
 const MAX_ARTICLES = Number(process.env.MAX_ARTICLES || 40); // plafond par passage (quota)
 const BATCH_SIZE = Number(process.env.BATCH_SIZE || 10); // petits lots : une réponse ratée ne fait pas perdre tout le passage
+const IGNORE_SEEN = process.env.IGNORE_SEEN === "1"; // recette : renoter les articles déjà vus (après un réglage du profil)
 const DATA_DIR = new URL("../data/", import.meta.url);
 const SITE_DIGEST = new URL("../docs/digest.json", import.meta.url); // lu par le site
 const file = (name) => new URL(name, DATA_DIR);
@@ -33,9 +34,9 @@ async function main() {
 
   const seen = new Set(await readJson(file("seen.json"), []));
   const { articles, report } = await fetchArticles(profile.sources, MAX_AGE_HOURS);
-  const fresh = dedupe(articles.filter((a) => !seen.has(a.link)).sort((a, b) => b.date.localeCompare(a.date))).slice(0, MAX_ARTICLES);
+  const fresh = dedupe(articles.filter((a) => IGNORE_SEEN || !seen.has(a.link)).sort((a, b) => b.date.localeCompare(a.date))).slice(0, MAX_ARTICLES);
 
-  console.log(`\n${articles.length} articles récents, ${fresh.length} nouveaux.`);
+  console.log(`\n${articles.length} articles récents, ${fresh.length} ${IGNORE_SEEN ? "à renoter (mode recette)" : "nouveaux"}.`);
 
   const notes = [];
   const rejets = [];
@@ -60,7 +61,10 @@ async function main() {
 
   // Le fichier du jour garde TOUS les articles notés : utile pour le blind test de la recette
   const previous = await readJson(file(`veille-${today}.json`), null);
-  const allNotes = [...(previous?.articles ?? []), ...notes];
+  // Fusion avec les passages précédents du jour : une nouvelle note remplace l'ancienne (même lien)
+  const byLink = new Map((previous?.articles ?? []).map((a) => [a.lien, a]));
+  for (const a of notes) byLink.set(a.lien, a);
+  const allNotes = [...byLink.values()];
   const digest = buildDigest(allNotes);
   const output = {
     date: today,
