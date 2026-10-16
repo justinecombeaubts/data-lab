@@ -47,13 +47,13 @@ Relancer avec renotation : *Actions → Veille DataLab → Run workflow* en coch
 
 | Article | Avant | Après |
 |---|---|---|
-| Noyau Linux Ubuntu | 10 | |
-| Noyau Linux Red Hat | 2 | |
-| Noyau Linux SUSE | 2 | |
-| Traefik | 9 | |
-| Mattermost | 8 | |
-| PostgreSQL psqlODBC | 9 | |
-| **Articles dans le digest** | **5** | |
+| Noyau Linux Ubuntu | 10 | 10 ✓ |
+| Noyau Linux Red Hat | 2 | **9** ✗ (attendu : bas) |
+| Noyau Linux SUSE | 2 | **9** ✗ (attendu : bas) |
+| Traefik | 9 | 0 ✓ (hors-sujet) |
+| Mattermost | 8 | 0 ✓ (hors-sujet) |
+| PostgreSQL psqlODBC | 9 | 9 ✓ |
+| **Articles dans le digest** | **5** | **4** (Ubuntu, Red Hat, SUSE, PostgreSQL) |
 
 ### Blind test (accord outil / équipe sur 10 articles)
 
@@ -62,8 +62,14 @@ Relancer avec renotation : *Actions → Veille DataLab → Run workflow* en coch
 | | Accord outil / équipe | Détail |
 |---|---|---|
 | Avant réglage | **7 / 10** | 2 faux positifs (Mattermost, Traefik), 1 faux négatif (étude européenne sur la protection des données en finance, notée 5) |
-| Après réglage n° 1 | **à mesurer** | Relancer avec « renoter », reporter les nouvelles notes dans le tableur |
+| Après réglage n° 1 | **9 / 10** | Les 2 faux positifs ont disparu (Traefik et Mattermost notés 0). Reste le faux négatif : l'étude finance, notée 4 |
 
-**Attendu :** le réglage n° 1 vise les 2 faux positifs (outils absents du profil). Il ne traite pas le faux négatif : si l'étude finance reste sous le seuil, ce sera l'objet d'un réglage n° 2.
+**Résultat (passage « renoter » du 16/10, 16 h 18) :** le réglage n° 1 a supprimé les 2 faux positifs, l'accord passe de 7/10 à 9/10.
+
+**Effet de bord à traiter (réglage n° 2) :**
+- Les noyaux **Red Hat et SUSE** passent de 2 à **9** : l'IA applique maintenant « faille du noyau Linux » à toutes les distributions, alors que DataLab est sur Ubuntu. Ils ne font pas partie des 10 articles du blind test, mais ce sont 2 faux positifs dans le digest.
+- L'étude européenne sur la protection des données en finance reste à **4** (faux négatif).
+
+Piste : dans `profile.md`, préciser « seules les failles Ubuntu concernent DataLab ; les autres distributions Linux sont hors périmètre », et ajouter aux priorités « études et recommandations des autorités sur les données dans la finance ».
 
 > Les décisions de l'équipe ont été pré-remplies puis relues : à confirmer en notant les 10 articles **sans regarder** les colonnes de l'outil.

@@ -21,7 +21,7 @@ Mission client B3 Dev & Automatisation (Digital Campus) : automatiser la veille 
 | L2 · Le moteur de tri | ✅ Terminé | [`src/`](src/), [`test/tri.test.js`](test/tri.test.js) |
 | Interface web | ✅ Terminé | [`docs/`](docs/) (publiée par GitHub Pages) |
 | L3 · Un outil fiable | ✅ Terminé | [`.github/workflows/veille.yml`](.github/workflows/veille.yml) |
-| L4 · La recette | 🟡 Score après réglage à mesurer | [`recette/journal.md`](recette/journal.md) (blind test 7/10 avant réglage), [`GUIDE.md`](GUIDE.md) (documentation client) |
+| L4 · La recette | 🟡 Score après réglage à mesurer | [`recette/journal.md`](recette/journal.md) (blind test 7/10 → 9/10 après réglage n° 1), [`GUIDE.md`](GUIDE.md) (documentation client) |
 
 > **Équipe DataLab :** pour ajouter une source, modifier le profil ou relancer l'outil, suivez le [**guide d'exploitation**](GUIDE.md).
 
