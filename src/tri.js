@@ -132,12 +132,17 @@ export function toMarkdown(digest, date) {
   return parts.join("\n");
 }
 
-/** Format lu par le site (docs/digest.json) : { date, categories: { sécurité: [...], ... }, surprise }. */
-export function toWebDigest(digest, date) {
+/**
+ * Format lu par le site (docs/digest.json) : { date, categories: { sécurité: [...], ... }, surprise, ecartes }.
+ * « ecartes » = tous les autres articles notés du jour (sous le seuil ou hors sujet), du mieux noté au moins bien noté.
+ */
+export function toWebDigest(digest, date, allNotes = []) {
   const pick = ({ titre, note, categorie, raison, lien, source }) => ({ titre, note, categorie, raison, lien, source });
+  const affiches = new Set([...digest.categories.flatMap((c) => c.articles), digest.surprise].filter(Boolean).map((a) => a.lien));
   return {
     date,
     categories: Object.fromEntries(digest.categories.map((c) => [c.categorie, c.articles.map(pick)])),
     surprise: digest.surprise ? pick(digest.surprise) : null,
+    ecartes: allNotes.filter((a) => !affiches.has(a.lien)).sort((a, b) => b.note - a.note).map(pick),
   };
 }

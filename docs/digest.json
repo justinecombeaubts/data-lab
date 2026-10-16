@@ -54,5 +54,279 @@
     "raison": "Rappel des droits liés à la reconstitution d'adresses e‑mail, utile pour ajuster les procédures de collecte de contacts.",
     "lien": "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-vos-droits",
     "source": "CNIL"
-  }
+  },
+  "ecartes": [
+    {
+      "titre": "De la protection des données à la création de valeur en finance : des autorités européennes publient une étude et des bonnes pratiques",
+      "note": 5,
+      "categorie": "conformité",
+      "raison": "Étude de la CNIL sur la protection des données en finance fournit des bonnes pratiques utiles pour les politiques internes de DataLab.",
+      "lien": "https://www.cnil.fr/fr/protection-donnees-valeur-finance-etude-autorites-europeennes",
+      "source": "CNIL"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Google Chrome (16 octobre 2026)",
+      "note": 5,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités de Google Chrome affectent les postes de travail mais n’impactent pas les pipelines de données de production.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1329/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (16 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités du noyau Linux Red Hat, peu probables d'impacter directement les outils Python ou PostgreSQL utilisés par DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1334/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (16 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités du noyau Linux SUSE, impact limité sur la stack Python/PostgreSQL de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1335/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits IBM (16 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités des produits IBM, hors du périmètre technologique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1336/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits F5 (15 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités des produits F5, non utilisées dans l'infrastructure de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1317/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Moodle (15 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités de Moodle, aucune dépendance avec la stack de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1318/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Sonicwall Network Security Manager (15 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités de Sonicwall Network Security Manager, hors du périmètre de la stack DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1320/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Drupal (15 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités de Drupal, aucune utilisation dans les projets DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1321/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Juniper Networks (15 octobre 2026)",
+      "note": 2,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités des produits Juniper Networks, non pertinentes pour la stack Python/PostgreSQL de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1322/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Moxa AIG-302 Series (16 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur du matériel Moxa non utilisé par l’infrastructure de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1327/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Office (16 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités de Microsoft Office, logiciel bureautique hors du périmètre technique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1331/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Microsoft (16 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités génériques sur produits Microsoft, peu pertinentes pour l’infrastructure Linux/Python de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1332/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Ordre du jour de la séance plénière du 15 octobre 2026",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Ordre du jour de la CNIL sans décision ou recommandation concrète applicable à DataLab.",
+      "lien": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-15-octobre-2026",
+      "source": "CNIL"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits Microsoft (15 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité Microsoft non liée à la stack Python/PostgreSQL de DataLab, aucun impact direct.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1323/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Symfony (15 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Symfony, framework web PHP, hors du périmètre technologique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1324/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans Cisco AsyncOS Software pour Secure Email Gateway (15 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité Cisco AsyncOS pour email gateway, non utilisé par DataLab selon le contexte fourni.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1325/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Palo Alto Networks (15 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Palo Alto Networks, équipements réseau non mentionnés dans la stack de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1326/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Clôture de l’injonction prononcée à l’encontre de GOOGLE",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Décision CNIL concernant Google, aucune incidence directe sur les pratiques ou la conformité de DataLab.",
+      "lien": "https://www.cnil.fr/fr/cloture-injonction-google",
+      "source": "CNIL"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Adobe (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Adobe, produit de bureautique non lié à la stack Python/PostgreSQL.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1301/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Xen (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Xen, hyperviseur non mentionné dans l’infrastructure de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1302/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans Symantec Endpoint Detection and Response (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité Symantec Endpoint, solution de sécurité endpoint hors du périmètre technologique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1303/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans MongoDB Server (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités MongoDB Server, base de données non utilisée par DataLab qui utilise PostgreSQL.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1304/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Mozilla (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Mozilla, produits de navigateur sans impact direct sur la stack de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1305/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Fortinet (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Fortinet n'affectent pas la stack Python/pandas/numpy/scikit-learn/PostgreSQL de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1306/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Curl (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Curl n'impliquent pas de dépendance directe de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1307/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Google Chrome (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Google Chrome hors du périmètre de la stack de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1308/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans Zabbix (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité Zabbix ne concerne pas les outils ou bibliothèques utilisés par DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1309/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Citrix (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Citrix n'ont aucun impact sur la stack Python de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1310/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Ivanti (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Ivanti ne concernent pas les composants de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1311/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Office (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Microsoft Office hors du périmètre de la stack de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1312/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft .Net (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités .Net ne touchent pas les bibliothèques Python utilisées par DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1313/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Windows (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Windows n'affectent pas directement la stack de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1314/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Azure (14 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Azure ne concernent pas les outils ou dépendances de DataLab",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1315/",
+      "source": "CERT-FR"
+    }
+  ]
 }

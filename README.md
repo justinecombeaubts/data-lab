@@ -58,7 +58,7 @@ profile.md ─► flux RSS (72 h) ─► doublons retirés ─► IA par lots de
 npm install
 echo "OLLAMA_API_KEY=ta_cle" > .env   # le fichier .env n'est jamais commité
 npm start                            # écrit le digest dans data/
-npm test                             # 7 tests : format, rejets, doublons, digest, sources
+npm test                             # 9 tests : format, rejets, doublons, digest, sources
 ```
 
 Réglages possibles (variables d'environnement) : `MIN_SCORE` (7), `MAX_DIGEST` (8), `SURPRISE_MIN` (4), `MAX_AGE_HOURS` (72), `MAX_ARTICLES` (40), `BATCH_SIZE` (10), `LLM_MODEL` (`gpt-oss:120b`).
@@ -68,6 +68,7 @@ Réglages possibles (variables d'environnement) : `MIN_SCORE` (7), `MAX_DIGEST` 
 Page statique en HTML, CSS et JS pur (aucune dépendance, aucune clé) : `index.html`, `style.css`, `app.js`. Elle lit `docs/digest.json`, écrit par le moteur à chaque passage (le fichier actuel contient des **données d'exemple**).
 
 - Synthèse du jour, une section par catégorie (sécurité, conformité, versions), article surprise à part.
+- Section repliable **« Articles écartés »** : tous les autres articles notés du jour (sous le seuil ou hors sujet), avec leur note et la raison de l'IA.
 - Badge de note selon l'urgence : 8+ priorité haute, 6-7 à planifier, moins de 6 pour information.
 - Filtres au clavier, mode clair/sombre, responsive, contenu injecté uniquement avec `textContent`.
 

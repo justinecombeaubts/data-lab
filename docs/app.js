@@ -58,6 +58,9 @@ function normaliser(data) {
     exemple: data?.exemple === true,
     categories,
     surprise: data?.surprise ? propre(data.surprise) : null,
+    ecartes: (Array.isArray(data?.ecartes) ? data.ecartes : [])
+      .map((a) => ({ ...propre(a), horsSujet: a?.categorie === "hors-sujet" }))
+      .sort((a, b) => b.note - a.note),
   };
 }
 
@@ -110,6 +113,35 @@ function sectionSurprise(article) {
   ]);
 }
 
+function ligneEcartee(article) {
+  const cat = byId[article.categorie];
+  const titre = article.lien
+    ? el("a", { text: article.titre, attrs: { href: article.lien, target: "_blank", rel: "noopener noreferrer" } })
+    : el("span", { text: article.titre });
+  return el("li", { cls: "ecarte" }, [
+    el("span", { cls: "ecarte-note", text: `${article.note}/10`, attrs: { "aria-label": `Note ${article.note} sur 10` } }),
+    el("div", { cls: "ecarte-corps" }, [
+      el("p", { cls: "ecarte-titre" }, [titre]),
+      el("p", { cls: "ecarte-meta" }, [
+        el("span", { cls: cat ? `tag-cat ${cat.css}` : "tag-hs", text: cat ? `${cat.icon} ${cat.label}` : "Hors sujet" }),
+        article.source ? el("span", { text: article.source }) : null,
+      ]),
+      article.raison ? el("p", { cls: "ecarte-raison", text: article.raison }) : null,
+    ]),
+  ]);
+}
+
+function sectionEcartes(liste) {
+  const details = el("details", { cls: "ecartes" }, [
+    el("summary", {}, [
+      el("span", { cls: "ecartes-titre", text: `Articles écartés (${liste.length})` }),
+      el("span", { cls: "ecartes-aide", text: "Notés sous le seuil ou hors sujet : affichés pour transparence" }),
+    ]),
+    el("ul", { cls: "ecartes-liste" }, liste.map(ligneEcartee)),
+  ]);
+  return el("section", { cls: "section", attrs: { "aria-label": "Articles écartés par le tri" } }, [details]);
+}
+
 function synthese(d) {
   const counts = CATEGORIES.map((c) => [c.id, d.categories[c.id].length]);
   const total = counts.reduce((s, [, n]) => s + n, 0);
@@ -123,6 +155,7 @@ function afficher() {
 
   if (!total && !digest.surprise) {
     resultats.append(el("div", { cls: "state" }, [el("p", { text: "Aucune actualité pertinente aujourd'hui." })]));
+    if (digest.ecartes.length) resultats.append(sectionEcartes(digest.ecartes));
     annonce.textContent = "Aucune actualité pertinente aujourd'hui.";
     return;
   }
@@ -131,6 +164,8 @@ function afficher() {
   for (const c of visibles) resultats.append(section(c, digest.categories[c.id]));
   const montrerSurprise = digest.surprise && (filtre === "tout" || digest.surprise.categorie === filtre);
   if (montrerSurprise) resultats.append(sectionSurprise(digest.surprise));
+  const ecartes = digest.ecartes.filter((a) => filtre === "tout" || a.categorie === filtre);
+  if (ecartes.length) resultats.append(sectionEcartes(ecartes));
 
   const n = visibles.reduce((s, c) => s + digest.categories[c.id].length, 0);
   const libelle = filtre === "tout" ? "toutes catégories" : byId[filtre].label.toLowerCase();

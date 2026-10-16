@@ -73,7 +73,7 @@ async function main() {
   await writeJson(file(`veille-${today}.json`), output);
   await writeJson(file("latest.json"), output);
   await fs.writeFile(file(`veille-${today}.md`), toMarkdown(digest, today));
-  await writeJson(SITE_DIGEST, toWebDigest(digest, today));
+  await writeJson(SITE_DIGEST, toWebDigest(digest, today, allNotes));
   if (rejets.length) await writeJson(file("rejets.json"), [...(await readJson(file("rejets.json"), [])), ...rejets].slice(-200));
   await writeJson(file("seen.json"), [...seen].slice(-2000));
 

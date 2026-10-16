@@ -195,6 +195,38 @@ main:focus { outline: none; }
 .surprise .card { background: var(--surface-2); border-style: dashed; border-left-style: solid; border-left-color: var(--cat-surprise); }
 .surprise .intro { margin: -4px 0 12px; color: var(--text-muted); font-size: .95rem; }
 
+/* Articles écartés */
+.ecartes {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.ecartes summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;
+}
+.ecartes-titre { font-weight: 700; font-size: 1.05rem; }
+.ecartes-aide { font-size: .85rem; color: var(--text-muted); }
+.ecartes-liste { list-style: none; margin: 0; padding: 0 16px 8px; }
+.ecarte {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 10px 0; border-top: 1px solid var(--border);
+}
+.ecarte-note {
+  flex-shrink: 0; min-width: 48px; text-align: center;
+  padding: 2px 6px; border-radius: 6px; font-size: .85rem; font-weight: 700;
+  background: var(--note-faible-bg); color: var(--note-faible-fg);
+}
+.ecarte-corps { min-width: 0; }
+.ecarte-corps p { margin: 0; }
+.ecarte-titre { font-weight: 600; }
+.ecarte-titre a { color: var(--text); }
+.ecarte-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .82rem; color: var(--text-muted); margin-top: 2px !important; }
+.ecarte-meta .tag-cat { color: var(--cat); }
+.tag-hs { font-weight: 600; }
+.ecarte-raison { font-size: .9rem; color: var(--text-muted); margin-top: 4px !important; }
+
 .site-footer { border-top: 1px solid var(--border); color: var(--text-muted); font-size: .85rem; padding: 16px 0 28px; }
 
 @media (max-width: 560px) {

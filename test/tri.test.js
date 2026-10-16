@@ -87,4 +87,13 @@ test("le digest du site a le format attendu par l'interface", () => {
   assert.deepEqual(Object.keys(web.categories), ["sécurité", "conformité", "versions"]);
   assert.deepEqual(web.categories["sécurité"][0], { titre: "t", note: 9, categorie: "sécurité", raison: "raison", lien: "https://ex.com/t", source: "s" });
   assert.equal(web.surprise, null);
+  assert.deepEqual(web.ecartes, []);
+});
+
+test("les articles non affichés sont listés dans « ecartes », du mieux noté au moins bien noté", () => {
+  const a = (titre, note, categorie) => ({ titre, note, categorie, raison: "raison", lien: `https://ex.com/${titre}`, source: "s", date: "d" });
+  const notes = [a("retenu", 9, "sécurité"), a("surprise", 5, "versions"), a("bas", 2, "versions"), a("crypto", 0, "hors-sujet"), a("moyen", 4, "conformité")];
+  const web = toWebDigest(buildDigest(notes), "2026-10-16", notes);
+  assert.equal(web.surprise.titre, "surprise");
+  assert.deepEqual(web.ecartes.map((x) => x.titre), ["moyen", "bas", "crypto"]);
 });
