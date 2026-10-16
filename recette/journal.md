@@ -57,11 +57,13 @@ Relancer avec renotation : *Actions → Veille DataLab → Run workflow* en coch
 
 ### Blind test (accord outil / équipe sur 10 articles)
 
-10 articles du jour notés à la main avec la même grille que l'IA, sans regarder ses notes, puis comparaison.
+10 articles du jour, décision « retenu / non retenu » de l'équipe comparée à celle de l'outil (seuil 7). Détail : `recette/blind-test-DataLab.xlsx`.
 
-| | Accord outil / équipe |
-|---|---|
-| Avant réglage | **9 / 10** |
-| Après réglage n° 1 | **10 / 10** |
+| | Accord outil / équipe | Détail |
+|---|---|---|
+| Avant réglage | **7 / 10** | 2 faux positifs (Mattermost, Traefik), 1 faux négatif (étude européenne sur la protection des données en finance, notée 5) |
+| Après réglage n° 1 | **à mesurer** | Relancer avec « renoter », reporter les nouvelles notes dans le tableur |
 
-**Conclusion :** préciser l'environnement et interdire les suppositions a supprimé le seul désaccord. Le profil est désormais aligné avec le jugement de l'équipe.
+**Attendu :** le réglage n° 1 vise les 2 faux positifs (outils absents du profil). Il ne traite pas le faux négatif : si l'étude finance reste sous le seuil, ce sera l'objet d'un réglage n° 2.
+
+> Les décisions de l'équipe ont été pré-remplies puis relues : à confirmer en notant les 10 articles **sans regarder** les colonnes de l'outil.
