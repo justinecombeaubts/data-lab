@@ -1,0 +1,19 @@
+{
+  "name": "data-lab-veille",
+  "version": "1.0.0",
+  "description": "Veille automatisée DataLab : flux RSS triés par un LLM selon profile.md",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "rss-parser": "^3.13.0",
+    "zod": "^3.25.76"
+  }
+}
