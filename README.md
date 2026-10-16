@@ -19,6 +19,7 @@ Mission client B3 Dev & Automatisation (Digital Campus) : automatiser la veille 
 |---|---|---|
 | L1 · Le cadrage | ✅ Terminé | [`profile.md`](profile.md), [`livrables/Livrable1_Cadrage_DataLab.pdf`](livrables/Livrable1_Cadrage_DataLab.pdf) |
 | L2 · Le moteur de tri | ✅ Terminé | [`src/`](src/), [`test/tri.test.js`](test/tri.test.js) |
+| Interface web | ✅ Terminé | [`docs/`](docs/) (publiée par GitHub Pages) |
 | L3 · Un outil fiable | ⏳ À faire | |
 | L4 · La recette | ⏳ À faire | |
 
@@ -49,7 +50,7 @@ profile.md ─► flux RSS (72 h) ─► doublons retirés ─► IA par lots de
 | `src/prompt.js` | Le prompt de l'équipe, avec le profil injecté et la grille de notation |
 | `src/llm.js` | Appel à l'IA (Ollama, `gpt-oss:120b`), avec nouvelles tentatives si saturée |
 | `src/tri.js` | Validation Zod, doublons, digest et article surprise |
-| `src/index.js` | Enchaîne le tout et écrit `data/veille-AAAA-MM-JJ.json` et `.md` |
+| `src/index.js` | Enchaîne le tout et écrit `data/veille-AAAA-MM-JJ.json`, `.md` et `docs/digest.json` |
 
 ### Lancer en local
 
@@ -61,3 +62,14 @@ npm test                             # 7 tests : format, rejets, doublons, diges
 ```
 
 Réglages possibles (variables d'environnement) : `MIN_SCORE` (7), `MAX_DIGEST` (8), `SURPRISE_MIN` (4), `MAX_AGE_HOURS` (72), `MAX_ARTICLES` (40), `BATCH_SIZE` (10), `LLM_MODEL` (`gpt-oss:120b`).
+
+## L'interface web (`docs/`)
+
+Page statique en HTML, CSS et JS pur (aucune dépendance, aucune clé) : `index.html`, `style.css`, `app.js`. Elle lit `docs/digest.json`, écrit par le moteur à chaque passage (le fichier actuel contient des **données d'exemple**).
+
+- Synthèse du jour, une section par catégorie (sécurité, conformité, versions), article surprise à part.
+- Badge de note selon l'urgence : 8+ priorité haute, 6-7 à planifier, moins de 6 pour information.
+- Filtres au clavier, mode clair/sombre, responsive, contenu injecté uniquement avec `textContent`.
+
+**Publier :** Settings → Pages → *Deploy from a branch* → `main` / `/docs`.
+**Voir en local :** `npx serve docs` (ou `python3 -m http.server -d docs`).

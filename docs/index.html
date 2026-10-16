@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Veille technique quotidienne du pôle data : sécurité, conformité et versions.">
+  <title>Veille DataLab</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312284c'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial'%3EDL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Pôle data · Veille quotidienne</p>
+      <h1>Veille DataLab</h1>
+      <p class="meta">
+        <time id="date" datetime="">—</time>
+        <span aria-hidden="true"> · </span>
+        <span id="synthese">Chargement…</span>
+      </p>
+    </div>
+  </header>
+
+  <nav class="filters-bar" aria-label="Filtrer par catégorie">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Catégories">
+        <button type="button" class="filter" data-filter="tout" aria-pressed="true">Tout</button>
+        <button type="button" class="filter" data-filter="sécurité" aria-pressed="false"><span aria-hidden="true">🛡️</span> Sécurité</button>
+        <button type="button" class="filter" data-filter="conformité" aria-pressed="false"><span aria-hidden="true">⚖️</span> Conformité</button>
+        <button type="button" class="filter" data-filter="versions" aria-pressed="false"><span aria-hidden="true">📦</span> Versions</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenu" class="wrap" tabindex="-1">
+    <p id="annonce" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
+
+    <div id="etat" class="state" role="status">
+      <p>Chargement de la veille du jour…</p>
+    </div>
+
+    <div id="resultats" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Articles sélectionnés et notés automatiquement selon le profil DataLab. Notes : <strong>8 et plus</strong> à traiter en priorité, <strong>6-7</strong> à planifier, <strong>moins de 6</strong> pour information.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

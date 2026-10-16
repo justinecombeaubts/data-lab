@@ -4,13 +4,14 @@ import { loadProfile } from "./profile.js";
 import { fetchArticles } from "./feeds.js";
 import { buildSystemPrompt, buildUserMessage } from "./prompt.js";
 import { callLLM } from "./llm.js";
-import { dedupe, parseResponse, buildDigest, toMarkdown, MIN_SCORE } from "./tri.js";
+import { dedupe, parseResponse, buildDigest, toMarkdown, toWebDigest, MIN_SCORE } from "./tri.js";
 
 // ---- Config ----
 const MAX_AGE_HOURS = Number(process.env.MAX_AGE_HOURS || 72); // 72 h : le digest du lundi couvre le week-end
 const MAX_ARTICLES = Number(process.env.MAX_ARTICLES || 40); // plafond par passage (quota)
 const BATCH_SIZE = Number(process.env.BATCH_SIZE || 10); // petits lots : une réponse ratée ne fait pas perdre tout le passage
 const DATA_DIR = new URL("../data/", import.meta.url);
+const SITE_DIGEST = new URL("../docs/digest.json", import.meta.url); // lu par le site
 const file = (name) => new URL(name, DATA_DIR);
 const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris" }).format(new Date()); // AAAA-MM-JJ
 
@@ -72,11 +73,12 @@ async function main() {
   await writeJson(file(`veille-${today}.json`), output);
   await writeJson(file("latest.json"), output);
   await fs.writeFile(file(`veille-${today}.md`), toMarkdown(digest, today));
+  await writeJson(SITE_DIGEST, toWebDigest(digest, today));
   if (rejets.length) await writeJson(file("rejets.json"), [...(await readJson(file("rejets.json"), [])), ...rejets].slice(-200));
   await writeJson(file("seen.json"), [...seen].slice(-2000));
 
   console.log(`\n${toMarkdown(digest, today)}`);
-  console.log(`📄 Sauvegardé dans data/veille-${today}.json et .md (${digest.total_retenus} retenu(s), ${rejets.length} écarté(s))`);
+  console.log(`📄 Sauvegardé dans data/veille-${today}.json, .md et docs/digest.json (${digest.total_retenus} retenu(s), ${rejets.length} écarté(s))`);
 }
 
 main().catch((err) => {

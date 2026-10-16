@@ -131,3 +131,13 @@ export function toMarkdown(digest, date) {
   if (digest.surprise) parts.push("## 🎲 Article surprise", "", line(digest.surprise), "");
   return parts.join("\n");
 }
+
+/** Format lu par le site (docs/digest.json) : { date, categories: { sécurité: [...], ... }, surprise }. */
+export function toWebDigest(digest, date) {
+  const pick = ({ titre, note, categorie, raison, lien, source }) => ({ titre, note, categorie, raison, lien, source });
+  return {
+    date,
+    categories: Object.fromEntries(digest.categories.map((c) => [c.categorie, c.articles.map(pick)])),
+    surprise: digest.surprise ? pick(digest.surprise) : null,
+  };
+}

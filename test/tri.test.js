@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseResponse, dedupe, buildDigest } from "../src/tri.js";
+import { parseResponse, dedupe, buildDigest, toWebDigest } from "../src/tri.js";
 import { parseSources } from "../src/profile.js";
 
 const batch = [
@@ -79,4 +79,12 @@ test("les sources sont lues depuis profile.md", () => {
   assert.equal(sources[0].url, "https://github.com/pandas-dev/pandas/releases.atom");
   assert.equal(sources[0].name, "pandas · releases");
   assert.equal(sources[1].group, "autorités");
+});
+
+test("le digest du site a le format attendu par l'interface", () => {
+  const a = { titre: "t", note: 9, categorie: "sécurité", raison: "raison", lien: "https://ex.com/t", source: "s", date: "d" };
+  const web = toWebDigest(buildDigest([a]), "2026-10-16");
+  assert.deepEqual(Object.keys(web.categories), ["sécurité", "conformité", "versions"]);
+  assert.deepEqual(web.categories["sécurité"][0], { titre: "t", note: 9, categorie: "sécurité", raison: "raison", lien: "https://ex.com/t", source: "s" });
+  assert.equal(web.surprise, null);
 });
