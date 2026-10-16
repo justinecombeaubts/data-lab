@@ -1,60 +1,58 @@
 {
   "date": "2026-10-16",
-  "exemple": true,
   "categories": {
     "sécurité": [
       {
-        "titre": "Exemple · Avis CERT-FR : vulnérabilité dans une bibliothèque Python de lecture de fichiers",
-        "note": 9,
+        "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (16 octobre 2026)",
+        "note": 10,
         "categorie": "sécurité",
-        "raison": "Les notebooks de DataLab chargent des fichiers externes : une exécution de code à distance toucherait directement les postes et les pipelines.",
-        "lien": "https://cert.cyber.gouv.fr/",
+        "raison": "Vulnérabilités critiques du noyau Linux Ubuntu, affectent directement les serveurs de production hébergeant PostgreSQL et les applications Python.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1333/",
         "source": "CERT-FR"
       },
       {
-        "titre": "Exemple · Paquet PyPI malveillant imitant une dépendance data populaire",
-        "note": 7,
+        "titre": "Multiples vulnérabilités dans Traefik (16 octobre 2026)",
+        "note": 9,
         "categorie": "sécurité",
-        "raison": "Risque de typosquatting lors de l'installation des dépendances : vérifier les noms exacts et épingler les versions.",
-        "lien": "https://github.blog/security/",
-        "source": "GitHub Blog · sécurité"
+        "raison": "Vulnérabilités dans Traefik, reverse‑proxy souvent déployé en front‑end des services DataLab, peuvent compromettre la confidentialité et la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1330/",
+        "source": "CERT-FR"
+      },
+      {
+        "titre": "Vulnérabilité dans PostgreSQL psqlODBC (15 octobre 2026)",
+        "note": 9,
+        "categorie": "sécurité",
+        "raison": "Vulnérabilité du driver psqlODBC de PostgreSQL pouvant provoquer un déni de service, impact direct sur les bases de données exploitées par DataLab.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1319/",
+        "source": "CERT-FR"
+      },
+      {
+        "titre": "Multiples vulnérabilités dans les produits Mattermost (16 octobre 2026)",
+        "note": 8,
+        "categorie": "sécurité",
+        "raison": "Vulnérabilités dans Mattermost, plateforme de messagerie interne potentiellement utilisée, nécessitent une mitigation rapide.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1328/",
+        "source": "CERT-FR"
       }
     ],
     "conformité": [
       {
-        "titre": "Exemple · La CNIL précise ses recommandations sur l'entraînement de modèles avec des données personnelles",
-        "note": 8,
+        "titre": "Reconstitution d’adresses électroniques professionnelles : dans quel cadre est-ce autorisé ?",
+        "note": 7,
         "categorie": "conformité",
-        "raison": "Les modèles de scoring sont entraînés sur des données clients bancaires : analyse d'impact et pseudonymisation à vérifier.",
-        "lien": "https://www.cnil.fr/fr/actualites",
+        "raison": "Clarifie les conditions légales de reconstitution d'adresses e‑mail professionnelles, impact direct sur la conformité RGPD des traitements de données de DataLab.",
+        "lien": "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-quel-cadre",
         "source": "CNIL"
       }
     ],
-    "versions": [
-      {
-        "titre": "Exemple · pandas 3.1 retire plusieurs API dépréciées",
-        "note": 8,
-        "categorie": "versions",
-        "raison": "Breaking change à tester en recette avant toute montée de version : ne pas adopter immédiatement en production.",
-        "lien": "https://github.com/pandas-dev/pandas/releases",
-        "source": "pandas · releases"
-      },
-      {
-        "titre": "Exemple · scikit-learn annonce le retrait d'un paramètre dans deux versions",
-        "note": 7,
-        "categorie": "versions",
-        "raison": "Plusieurs pipelines utilisent ce paramètre : la correction est à planifier avant la prochaine montée de version.",
-        "lien": "https://github.com/scikit-learn/scikit-learn/releases",
-        "source": "scikit-learn · releases"
-      }
-    ]
+    "versions": []
   },
   "surprise": {
-    "titre": "Exemple · Retour d'expérience : migrer un pipeline de numpy 1.x vers 2.x",
-    "note": 5,
-    "categorie": "versions",
-    "raison": "Pas urgent, mais les pièges décrits anticipent la future migration de l'équipe.",
-    "lien": "https://github.com/numpy/numpy/releases",
-    "source": "numpy · releases"
+    "titre": "Reconstitution d’adresses électroniques professionnelles : quels sont vos droits ?",
+    "note": 6,
+    "categorie": "conformité",
+    "raison": "Rappel des droits liés à la reconstitution d'adresses e‑mail, utile pour ajuster les procédures de collecte de contacts.",
+    "lien": "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-vos-droits",
+    "source": "CNIL"
   }
 }
