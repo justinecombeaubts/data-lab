@@ -20,8 +20,10 @@ Mission client B3 Dev & Automatisation (Digital Campus) : automatiser la veille 
 | L1 · Le cadrage | ✅ Terminé | [`profile.md`](profile.md), [`livrables/Livrable1_Cadrage_DataLab.pdf`](livrables/Livrable1_Cadrage_DataLab.pdf) |
 | L2 · Le moteur de tri | ✅ Terminé | [`src/`](src/), [`test/tri.test.js`](test/tri.test.js) |
 | Interface web | ✅ Terminé | [`docs/`](docs/) (publiée par GitHub Pages) |
-| L3 · Un outil fiable | 🟡 Workflow en place, à tester | [`.github/workflows/veille.yml`](.github/workflows/veille.yml) |
-| L4 · La recette | 🟡 En cours | [`recette/journal.md`](recette/journal.md) |
+| L3 · Un outil fiable | ✅ Terminé | [`.github/workflows/veille.yml`](.github/workflows/veille.yml) |
+| L4 · La recette | ✅ Terminé | [`recette/journal.md`](recette/journal.md) (blind test 9/10 → 10/10), [`GUIDE.md`](GUIDE.md) (documentation client) |
+
+> **Équipe DataLab :** pour ajouter une source, modifier le profil ou relancer l'outil, suivez le [**guide d'exploitation**](GUIDE.md).
 
 ## Choix technique
 

@@ -55,4 +55,13 @@ Relancer avec renotation : *Actions → Veille DataLab → Run workflow* en coch
 | PostgreSQL psqlODBC | 9 | |
 | **Articles dans le digest** | **5** | |
 
-Le score du blind test (accord outil / équipe sur 10 articles) est à mesurer avant et après ce réglage par la responsable qualité.
+### Blind test (accord outil / équipe sur 10 articles)
+
+10 articles du jour notés à la main avec la même grille que l'IA, sans regarder ses notes, puis comparaison.
+
+| | Accord outil / équipe |
+|---|---|
+| Avant réglage | **9 / 10** |
+| Après réglage n° 1 | **10 / 10** |
+
+**Conclusion :** préciser l'environnement et interdire les suppositions a supprimé le seul désaccord. Le profil est désormais aligné avec le jugement de l'équipe.

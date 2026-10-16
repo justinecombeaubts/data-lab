@@ -63,6 +63,11 @@ jobs:
         env:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           IGNORE_SEEN: ${{ inputs.renoter && '1' || '0' }}
+          # Réglages facultatifs (Settings → Secrets and variables → Actions → Variables) ; vide = valeur par défaut
+          MIN_SCORE: ${{ vars.MIN_SCORE }}
+          MAX_DIGEST: ${{ vars.MAX_DIGEST }}
+          MAX_ARTICLES: ${{ vars.MAX_ARTICLES }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
 
       - name: Enregistrer le digest du jour
         if: steps.guard.outputs.run == 'true'
