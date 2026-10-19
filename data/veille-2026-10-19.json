@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-19",
+  "genere_le": "2026-10-19T10:35:33.985Z",
+  "digest": {
+    "categories": [
+      {
+        "categorie": "sécurité",
+        "articles": []
+      },
+      {
+        "categorie": "conformité",
+        "articles": []
+      },
+      {
+        "categorie": "versions",
+        "articles": []
+      }
+    ],
+    "surprise": {
+      "titre": "Revoir le webinaire - Nouveau régime de la prospection téléphonique : comment et quand recueillir le consentement de la personne concernée ?",
+      "note": 5,
+      "categorie": "conformité",
+      "raison": "Webinaire CNIL sur le consentement en prospection téléphonique, utile pour la conformité RGPD mais sans impact direct ou décision contraignante pour les traitements de données de DataLab.",
+      "lien": "https://www.cnil.fr/fr/webinaire-demarchage-telephonique",
+      "source": "CNIL",
+      "date": "2026-10-19T12:00:00.000Z"
+    },
+    "total_retenus": 0
+  },
+  "articles": [
+    {
+      "titre": "Revoir le webinaire - Nouveau régime de la prospection téléphonique : comment et quand recueillir le consentement de la personne concernée ?",
+      "note": 5,
+      "categorie": "conformité",
+      "raison": "Webinaire CNIL sur le consentement en prospection téléphonique, utile pour la conformité RGPD mais sans impact direct ou décision contraignante pour les traitements de données de DataLab.",
+      "lien": "https://www.cnil.fr/fr/webinaire-demarchage-telephonique",
+      "source": "CNIL",
+      "date": "2026-10-19T12:00:00.000Z"
+    }
+  ],
+  "rapport": {
+    "sources": [
+      {
+        "source": "pandas · releases",
+        "url": "https://github.com/pandas-dev/pandas/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "numpy · releases",
+        "url": "https://github.com/numpy/numpy/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "scikit-learn · releases",
+        "url": "https://github.com/scikit-learn/scikit-learn/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CERT-FR",
+        "url": "https://cert.cyber.gouv.fr/avis/feed/",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CNIL",
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "ok": true,
+        "count": 4
+      },
+      {
+        "source": "GitHub Blog · sécurité",
+        "url": "https://github.blog/security/feed/",
+        "ok": true,
+        "count": 0
+      }
+    ],
+    "analyses": 1,
+    "rejets": 0,
+    "lots_en_erreur": 0
+  }
+}
