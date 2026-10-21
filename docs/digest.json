@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "categories": {
     "sécurité": [],
     "conformité": [],
@@ -8,59 +8,19 @@
   "surprise": null,
   "ecartes": [
     {
-      "titre": "Journée RGPD à Poitiers : cybersécurité, IA et conformité au cœur des enjeux de protection des données",
+      "titre": "Multiples vulnérabilités dans Laravel (20 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Annonce d'un événement CNIL, pas de nouvelle réglementation ni d'obligation concrète pour DataLab",
-      "lien": "https://www.cnil.fr/fr/journee-rgpd-2026-poitiers",
-      "source": "CNIL"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Juniper Networks Session Smart Router (19 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités affectant Juniper Router, hors de la stack Python/Ubuntu de DataLab",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1337/",
+      "raison": "Laravel n'est pas utilisé dans la stack Python de DataLab, donc les vulnérabilités ne concernent pas directement l'infrastructure.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1343/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Vulnérabilité dans Mattermost Server (19 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Mattermost Server (20 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilité Mattermost Server, produit non utilisé par DataLab",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1338/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Stormshield Network Security (19 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Stormshield, aucune corrélation avec la stack de DataLab",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1339/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Roundcube Webmail (19 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Roundcube Webmail, hors du périmètre technologique de DataLab",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1340/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits F5 (19 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités produits F5, non présents dans l'environnement de DataLab",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1341/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Microsoft Edge (19 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Microsoft Edge, produit non exploité par DataLab",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1342/",
+      "raison": "Mattermost Server n'est pas présent dans la stack ou l'environnement de DataLab, les vulnérabilités ne sont pas pertinentes.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1344/",
       "source": "CERT-FR"
     }
   ]

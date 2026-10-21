@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-21",
+  "genere_le": "2026-10-21T09:53:40.714Z",
+  "digest": {
+    "categories": [
+      {
+        "categorie": "sécurité",
+        "articles": []
+      },
+      {
+        "categorie": "conformité",
+        "articles": []
+      },
+      {
+        "categorie": "versions",
+        "articles": []
+      }
+    ],
+    "surprise": null,
+    "total_retenus": 0
+  },
+  "articles": [
+    {
+      "titre": "Multiples vulnérabilités dans Laravel (20 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Laravel n'est pas utilisé dans la stack Python de DataLab, donc les vulnérabilités ne concernent pas directement l'infrastructure.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1343/",
+      "source": "CERT-FR",
+      "date": "2026-10-20T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Mattermost Server (20 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Mattermost Server n'est pas présent dans la stack ou l'environnement de DataLab, les vulnérabilités ne sont pas pertinentes.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1344/",
+      "source": "CERT-FR",
+      "date": "2026-10-20T00:00:00.000Z"
+    }
+  ],
+  "rapport": {
+    "sources": [
+      {
+        "source": "pandas · releases",
+        "url": "https://github.com/pandas-dev/pandas/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "numpy · releases",
+        "url": "https://github.com/numpy/numpy/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "scikit-learn · releases",
+        "url": "https://github.com/scikit-learn/scikit-learn/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CERT-FR",
+        "url": "https://cert.cyber.gouv.fr/avis/feed/",
+        "ok": true,
+        "count": 8
+      },
+      {
+        "source": "CNIL",
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "ok": true,
+        "count": 2
+      },
+      {
+        "source": "GitHub Blog · sécurité",
+        "url": "https://github.blog/security/feed/",
+        "ok": true,
+        "count": 0
+      }
+    ],
+    "analyses": 2,
+    "rejets": 0,
+    "lots_en_erreur": 0
+  }
+}
