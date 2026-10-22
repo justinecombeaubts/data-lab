@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "categories": {
     "sécurité": [],
     "conformité": [],
@@ -8,19 +8,75 @@
   "surprise": null,
   "ecartes": [
     {
-      "titre": "Multiples vulnérabilités dans Laravel (20 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits StormShield (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Laravel n'est pas utilisé dans la stack Python de DataLab, donc les vulnérabilités ne concernent pas directement l'infrastructure.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1343/",
+      "raison": "Vulnérabilités sur StormShield, produit non présent dans la stack Python/pandas/scikit‑learn/PostgreSQL de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1345/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Multiples vulnérabilités dans Mattermost Server (20 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Mozilla (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Mattermost Server n'est pas présent dans la stack ou l'environnement de DataLab, les vulnérabilités ne sont pas pertinentes.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1344/",
+      "raison": "Vulnérabilités sur les produits Mozilla, hors de la stack et de l'environnement de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1346/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans MongoDB PHP Driver (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité du driver MongoDB PHP, technologie non utilisée par DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1347/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Mattermost Server (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur Mattermost Server, produit non présent dans la stack de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1348/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Oracle Weblogic (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur Oracle Weblogic, non utilisé par DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1355/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans Traefik (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité sur Traefik, outil non répertorié dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1356/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Google Chrome (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur Google Chrome, produit hors du périmètre technologique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1357/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Apache Tomcat (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur Apache Tomcat, non présent dans la stack ou l'infrastructure de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1358/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans PHP (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur PHP, langage et runtime non utilisé par DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1359/",
       "source": "CERT-FR"
     }
   ]
