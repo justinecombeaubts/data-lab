@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-22",
-  "genere_le": "2026-10-22T09:53:54.533Z",
+  "date": "2026-10-23",
+  "genere_le": "2026-10-23T09:47:39.733Z",
   "digest": {
     "categories": [
       {
@@ -13,91 +13,164 @@
       },
       {
         "categorie": "versions",
-        "articles": []
+        "articles": [
+          {
+            "titre": "pandas 3.1.0",
+            "note": 8,
+            "categorie": "versions",
+            "raison": "Publication de pandas 3.1.0, version majeure susceptible d’introduire des ruptures de compatibilité ; nécessite une planification de mise à jour mais pas d’adoption immédiate.",
+            "lien": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.0",
+            "source": "pandas · releases",
+            "date": "2026-10-22T15:40:05.000Z"
+          }
+        ]
       }
     ],
     "surprise": null,
-    "total_retenus": 0
+    "total_retenus": 1
   },
   "articles": [
     {
-      "titre": "Multiples vulnérabilités dans les produits StormShield (21 octobre 2026)",
+      "titre": "How bug bounty sharpens one researcher’s security skills",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur StormShield, produit non présent dans la stack Python/pandas/scikit‑learn/PostgreSQL de DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1345/",
+      "raison": "Article de blog sur le bug bounty, aucune vulnérabilité ou changement de version impactant la stack Python de DataLab.",
+      "lien": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+      "source": "GitHub Blog · sécurité",
+      "date": "2026-10-22T17:21:30.000Z"
+    },
+    {
+      "titre": "pandas 3.1.0",
+      "note": 8,
+      "categorie": "versions",
+      "raison": "Publication de pandas 3.1.0, version majeure susceptible d’introduire des ruptures de compatibilité ; nécessite une planification de mise à jour mais pas d’adoption immédiate.",
+      "lien": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.0",
+      "source": "pandas · releases",
+      "date": "2026-10-22T15:40:05.000Z"
+    },
+    {
+      "titre": "Ordre du jour de la séance plénière du 22 octobre 2026",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Ordre du jour de la CNIL sans décision ou recommandation concrète applicable à DataLab.",
+      "lien": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-22-octobre-2026",
+      "source": "CNIL",
+      "date": "2026-10-22T12:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Cisco (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Cisco non utilisées dans l’environnement Python/Ubuntu de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1360/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits Mozilla (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilité Mozilla hors du périmètre technologique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1361/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans GitLab (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités GitLab non liées aux outils de la stack (pandas, scikit‑learn, PostgreSQL).",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1363/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits SolarWinds (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités SolarWinds hors du périmètre de la plateforme DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1364/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans ISC BIND (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités ISC BIND non concernées par l’infrastructure Python/Ubuntu de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1365/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Splunk (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Splunk non utilisées dans l’environnement de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1366/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Node (22 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Node.js hors du stack Python de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1367/",
+      "source": "CERT-FR",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Oracle Database Server (21 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Oracle Database Server, produit absent de la stack Python/PostgreSQL de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1349/",
       "source": "CERT-FR",
       "date": "2026-10-21T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits Mozilla (21 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Oracle Java SE (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur les produits Mozilla, hors de la stack et de l'environnement de DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1346/",
+      "raison": "Vulnérabilités Oracle Java SE, Java n'est pas utilisé dans l'environnement de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1350/",
       "source": "CERT-FR",
       "date": "2026-10-21T00:00:00.000Z"
     },
     {
-      "titre": "Vulnérabilité dans MongoDB PHP Driver (21 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Oracle MySQL (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilité du driver MongoDB PHP, technologie non utilisée par DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1347/",
+      "raison": "Vulnérabilités Oracle MySQL, MySQL n'est pas présent dans la stack (PostgreSQL uniquement).",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1351/",
       "source": "CERT-FR",
       "date": "2026-10-21T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Mattermost Server (21 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Oracle PeopleSoft (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur Mattermost Server, produit non présent dans la stack de DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1348/",
+      "raison": "Vulnérabilités Oracle PeopleSoft, produit hors du périmètre technologique de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1352/",
       "source": "CERT-FR",
       "date": "2026-10-21T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Oracle Weblogic (21 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Oracle Systems (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur Oracle Weblogic, non utilisé par DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1355/",
+      "raison": "Vulnérabilités Oracle Systems, aucune corrélation avec les outils et environnements de DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1353/",
       "source": "CERT-FR",
       "date": "2026-10-21T00:00:00.000Z"
     },
     {
-      "titre": "Vulnérabilité dans Traefik (21 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Oracle Virtualization (21 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilité sur Traefik, outil non répertorié dans la stack ou l'environnement de DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1356/",
-      "source": "CERT-FR",
-      "date": "2026-10-21T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Google Chrome (21 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur Google Chrome, produit hors du périmètre technologique de DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1357/",
-      "source": "CERT-FR",
-      "date": "2026-10-21T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Apache Tomcat (21 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur Apache Tomcat, non présent dans la stack ou l'infrastructure de DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1358/",
-      "source": "CERT-FR",
-      "date": "2026-10-21T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans PHP (21 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur PHP, langage et runtime non utilisé par DataLab.",
-      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1359/",
+      "raison": "Vulnérabilités Oracle Virtualization, technologie non utilisée par DataLab.",
+      "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1354/",
       "source": "CERT-FR",
       "date": "2026-10-21T00:00:00.000Z"
     }
@@ -108,7 +181,7 @@
         "source": "pandas · releases",
         "url": "https://github.com/pandas-dev/pandas/releases.atom",
         "ok": true,
-        "count": 0
+        "count": 1
       },
       {
         "source": "numpy · releases",
@@ -126,22 +199,22 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 11
+        "count": 22
       },
       {
         "source": "CNIL",
         "url": "https://www.cnil.fr/fr/rss.xml",
-        "ok": false,
-        "error": "Status code 503"
+        "ok": true,
+        "count": 2
       },
       {
         "source": "GitHub Blog · sécurité",
         "url": "https://github.blog/security/feed/",
         "ok": true,
-        "count": 0
+        "count": 1
       }
     ],
-    "analyses": 9,
+    "analyses": 16,
     "rejets": 0,
     "lots_en_erreur": 0
   }
