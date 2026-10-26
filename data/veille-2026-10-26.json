@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "genere_le": "2026-10-26T10:50:15.616Z",
+  "digest": {
+    "categories": [
+      {
+        "categorie": "sécurité",
+        "articles": []
+      },
+      {
+        "categorie": "conformité",
+        "articles": []
+      },
+      {
+        "categorie": "versions",
+        "articles": []
+      }
+    ],
+    "surprise": null,
+    "total_retenus": 0
+  },
+  "articles": [],
+  "rapport": {
+    "sources": [
+      {
+        "source": "pandas · releases",
+        "url": "https://github.com/pandas-dev/pandas/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "numpy · releases",
+        "url": "https://github.com/numpy/numpy/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "scikit-learn · releases",
+        "url": "https://github.com/scikit-learn/scikit-learn/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CERT-FR",
+        "url": "https://cert.cyber.gouv.fr/avis/feed/",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CNIL",
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "GitHub Blog · sécurité",
+        "url": "https://github.blog/security/feed/",
+        "ok": true,
+        "count": 0
+      }
+    ],
+    "analyses": 0,
+    "rejets": 0,
+    "lots_en_erreur": 0
+  }
+}
