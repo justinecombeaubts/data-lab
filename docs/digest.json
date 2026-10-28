@@ -1,75 +1,90 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "categories": {
-    "sécurité": [
-      {
-        "titre": "Multiples vulnérabilités dans CPython (26 octobre 2026)",
-        "note": 9,
-        "categorie": "sécurité",
-        "raison": "Des vulnérabilités critiques dans CPython peuvent permettre un contournement de la politique de sécurité, impactant directement les services Python de DataLab.",
-        "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1379/",
-        "source": "CERT-FR"
-      }
-    ],
+    "sécurité": [],
     "conformité": [],
     "versions": []
   },
   "surprise": null,
   "ecartes": [
     {
-      "titre": "Vulnérabilité dans Mattermost Server (26 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Apple (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Mattermost Server n’est pas utilisé dans la stack ni l’environnement de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1380/",
+      "raison": "Vulnérabilités Apple ne concernent pas la stack Python, pandas, scikit‑learn, PostgreSQL ou Ubuntu.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1387/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits Tenable (26 octobre 2026)",
+      "titre": "Vulnérabilité dans Mattermost Server (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Les produits Tenable ne font pas partie de la stack ou de l’infrastructure de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1381/",
+      "raison": "Vulnérabilité Mattermost Server n'est pas utilisée dans la stack ni dans l'environnement spécifié.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1388/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Multiples vulnérabilités dans Microsoft .Net (26 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans GLPI (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Microsoft .Net n’est pas présent dans l’environnement Linux/Ubuntu de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1382/",
+      "raison": "Vulnérabilités GLPI ne concernent pas les technologies de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1389/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Vulnérabilité dans les produits Microsoft (26 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Tenable Network Monitor (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Les produits Microsoft généraux ne sont pas utilisés par DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1383/",
+      "raison": "Vulnérabilités Tenable Network Monitor ne sont pas liées à la stack ou à l'OS Ubuntu.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1390/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Vulnérabilité dans Citrix XenServer (26 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Mozilla Firefox (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Citrix XenServer n’est pas présent dans l’infrastructure de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1384/",
+      "raison": "Vulnérabilités Mozilla Firefox n'affectent pas les composants utilisés par DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1391/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits VMware (26 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Nextcloud (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "VMware n’est pas utilisé dans la stack de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1385/",
+      "raison": "Vulnérabilités Nextcloud ne concernent pas les outils de la stack.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1392/",
       "source": "CERT-FR"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits MongoDB (26 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Moxa (27 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "MongoDB n’est pas la base de données de DataLab, qui utilise PostgreSQL.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1386/",
+      "raison": "Vulnérabilités Moxa ne sont pas pertinentes pour la stack Python/Ubuntu de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1393/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Citrix NetScaler ADC et Gateway (27 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Citrix NetScaler ADC et Gateway ne touchent pas les technologies utilisées.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1394/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Edge (27 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Microsoft Edge ne concernent pas la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1395/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits Palo Alto Networks (27 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Palo Alto Networks ne sont pas liées aux composants de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1396/",
       "source": "CERT-FR"
     }
   ]
