@@ -1,19 +1,19 @@
 {
-  "date": "2026-10-29",
-  "genere_le": "2026-10-29T11:21:58.928Z",
+  "date": "2026-10-30",
+  "genere_le": "2026-10-30T11:14:08.577Z",
   "digest": {
     "categories": [
       {
         "categorie": "sécurité",
         "articles": [
           {
-            "titre": "Vulnérabilité dans CPython (28 octobre 2026)",
-            "note": 10,
+            "titre": "Multiples vulnérabilités dans PostgreSQL Anonymizer (29 octobre 2026)",
+            "note": 9,
             "categorie": "sécurité",
-            "raison": "Vulnérabilité critique dans l'interpréteur CPython, directement exploitable sur les serveurs Python de DataLab.",
-            "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1397/",
+            "raison": "Des vulnérabilités dans PostgreSQL Anonymizer peuvent entraîner déni de service, fuite de données et contournement de politiques, impact direct sur la base PostgreSQL de DataLab.",
+            "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1413/",
             "source": "CERT-FR",
-            "date": "2026-10-28T00:00:00.000Z"
+            "date": "2026-10-29T00:00:00.000Z"
           }
         ]
       },
@@ -31,121 +31,112 @@
   },
   "articles": [
     {
-      "titre": "Cookies et application mobile : sanctions de 7 millions d’euros à l’encontre des sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT",
-      "note": 3,
-      "categorie": "conformité",
-      "raison": "Sanction CNIL pour cookies d'un site commercial, peu pertinent pour les traitements internes de DataLab.",
-      "lien": "https://www.cnil.fr/fr/sanction-cookies-app-fnac",
-      "source": "CNIL",
-      "date": "2026-10-29T12:00:00.000Z"
+      "titre": "Vulnérabilité dans Mattermost Server (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Mattermost Server n'est pas utilisé dans la stack ni l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1409/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Vulnérabilité dans CPython (28 octobre 2026)",
-      "note": 10,
+      "titre": "Vulnérabilité dans les produits NetApp (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits NetApp ne font pas partie de la stack ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1410/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Veeam Backup for Microsoft 365 (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Veeam Backup for Microsoft 365 n'est pas présent dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1411/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits Cisco (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits Cisco ne sont pas utilisés par DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1412/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans PostgreSQL Anonymizer (29 octobre 2026)",
+      "note": 9,
       "categorie": "sécurité",
-      "raison": "Vulnérabilité critique dans l'interpréteur CPython, directement exploitable sur les serveurs Python de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1397/",
+      "raison": "Des vulnérabilités dans PostgreSQL Anonymizer peuvent entraîner déni de service, fuite de données et contournement de politiques, impact direct sur la base PostgreSQL de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1413/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Google Chrome (28 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Juniper Networks (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités affectant Google Chrome, aucun usage dans la stack Python/Ubuntu de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1398/",
+      "raison": "Les produits Juniper Networks ne sont pas pertinents pour la stack de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1414/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits Veeam (28 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Apache Kafka (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur les produits Veeam, non mentionnés dans la stack ou l'environnement de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1399/",
+      "raison": "Apache Kafka n'est pas présent dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1415/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Vulnérabilité dans Samba (28 octobre 2026)",
+      "titre": "Vulnérabilité dans les produits ESET (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilité Samba, outil non répertorié dans la stack ou l'environnement spécifiés.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1400/",
+      "raison": "Les produits ESET ne sont pas utilisés par DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1416/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Docker Desktop (28 octobre 2026)",
+      "titre": "Vulnérabilité dans les produits Kaspersky (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Docker Desktop, produit non utilisé sur les serveurs Linux durs de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1401/",
+      "raison": "Les produits Kaspersky ne font pas partie de la stack ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1417/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Palo Alto Networks PAN-OS (28 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Foxit Online Services (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités PAN‑OS de Palo Alto, hors du périmètre technologique de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1402/",
+      "raison": "Foxit Online Services n'est pas utilisé dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1418/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Metabase (28 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans Elastic Cloud Enterprise (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Metabase, outil non présent dans la stack déclarée.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1403/",
+      "raison": "Elastic Cloud Enterprise n'est pas utilisé dans la stack ni l'environnement de DataLab, aucune incidence sur la sécurité ou la conformité du groupe bancaire.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1419/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Mitel OpenScape Endpoint Management (28 octobre 2026)",
+      "titre": "Multiples vulnérabilités dans WordPress (29 octobre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Mitel OpenScape, aucune utilisation connue dans l'infrastructure de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1404/",
+      "raison": "WordPress n'est pas présent dans la stack ou les dépendances de DataLab, les vulnérabilités ne concernent pas les systèmes de production ou de calcul.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1420/",
       "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Microsoft Edge (28 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités Microsoft Edge, navigateur non intégré à la chaîne de production de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1405/",
-      "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits Mozilla (28 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités affectant les produits Mozilla, hors de la stack Python/Ubuntu de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1406/",
-      "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
-    },
-    {
-      "titre": "Vulnérabilité dans les produits Belden (28 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilité dans les produits Belden, aucune incidence sur les technologies utilisées par DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1407/",
-      "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
-    },
-    {
-      "titre": "Vulnérabilité dans Axis Camera Station Pro (28 octobre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilité Axis Camera Station Pro, non liée aux outils ou environnements de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1408/",
-      "source": "CERT-FR",
-      "date": "2026-10-28T00:00:00.000Z"
+      "date": "2026-10-29T00:00:00.000Z"
     }
   ],
   "rapport": {
@@ -172,7 +163,7 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 22
+        "count": 24
       },
       {
         "source": "CNIL",
@@ -187,7 +178,7 @@
         "count": 0
       }
     ],
-    "analyses": 13,
+    "analyses": 12,
     "rejets": 0,
     "lots_en_erreur": 0
   }

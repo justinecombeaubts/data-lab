@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-30",
+  "genere_le": "2026-10-30T11:14:08.577Z",
+  "digest": {
+    "categories": [
+      {
+        "categorie": "sécurité",
+        "articles": [
+          {
+            "titre": "Multiples vulnérabilités dans PostgreSQL Anonymizer (29 octobre 2026)",
+            "note": 9,
+            "categorie": "sécurité",
+            "raison": "Des vulnérabilités dans PostgreSQL Anonymizer peuvent entraîner déni de service, fuite de données et contournement de politiques, impact direct sur la base PostgreSQL de DataLab.",
+            "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1413/",
+            "source": "CERT-FR",
+            "date": "2026-10-29T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "categorie": "conformité",
+        "articles": []
+      },
+      {
+        "categorie": "versions",
+        "articles": []
+      }
+    ],
+    "surprise": null,
+    "total_retenus": 1
+  },
+  "articles": [
+    {
+      "titre": "Vulnérabilité dans Mattermost Server (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Mattermost Server n'est pas utilisé dans la stack ni l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1409/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits NetApp (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits NetApp ne font pas partie de la stack ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1410/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Veeam Backup for Microsoft 365 (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Veeam Backup for Microsoft 365 n'est pas présent dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1411/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits Cisco (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits Cisco ne sont pas utilisés par DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1412/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans PostgreSQL Anonymizer (29 octobre 2026)",
+      "note": 9,
+      "categorie": "sécurité",
+      "raison": "Des vulnérabilités dans PostgreSQL Anonymizer peuvent entraîner déni de service, fuite de données et contournement de politiques, impact direct sur la base PostgreSQL de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1413/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Juniper Networks (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits Juniper Networks ne sont pas pertinents pour la stack de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1414/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Apache Kafka (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Apache Kafka n'est pas présent dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1415/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits ESET (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits ESET ne sont pas utilisés par DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1416/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans les produits Kaspersky (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits Kaspersky ne font pas partie de la stack ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1417/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Foxit Online Services (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Foxit Online Services n'est pas utilisé dans la stack ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1418/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Elastic Cloud Enterprise (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Elastic Cloud Enterprise n'est pas utilisé dans la stack ni l'environnement de DataLab, aucune incidence sur la sécurité ou la conformité du groupe bancaire.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1419/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans WordPress (29 octobre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "WordPress n'est pas présent dans la stack ou les dépendances de DataLab, les vulnérabilités ne concernent pas les systèmes de production ou de calcul.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1420/",
+      "source": "CERT-FR",
+      "date": "2026-10-29T00:00:00.000Z"
+    }
+  ],
+  "rapport": {
+    "sources": [
+      {
+        "source": "pandas · releases",
+        "url": "https://github.com/pandas-dev/pandas/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "numpy · releases",
+        "url": "https://github.com/numpy/numpy/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "scikit-learn · releases",
+        "url": "https://github.com/scikit-learn/scikit-learn/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CERT-FR",
+        "url": "https://cert.cyber.gouv.fr/avis/feed/",
+        "ok": true,
+        "count": 24
+      },
+      {
+        "source": "CNIL",
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "ok": true,
+        "count": 1
+      },
+      {
+        "source": "GitHub Blog · sécurité",
+        "url": "https://github.blog/security/feed/",
+        "ok": true,
+        "count": 0
+      }
+    ],
+    "analyses": 12,
+    "rejets": 0,
+    "lots_en_erreur": 0
+  }
+}
