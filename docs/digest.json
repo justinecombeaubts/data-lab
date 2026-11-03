@@ -1,10 +1,83 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "categories": {
     "sécurité": [],
     "conformité": [],
     "versions": []
   },
   "surprise": null,
-  "ecartes": []
+  "ecartes": [
+    {
+      "titre": "Multiples vulnérabilités dans Redmine (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Redmine ne fait pas partie de la stack, des dépendances ou de l'environnement Linux Ubuntu de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1434/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Synology (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Les produits Synology ne sont pas utilisés dans la stack, les dépendances ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1435/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Tenable Identity Exposure (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Tenable Identity Exposure n'est pas présent dans la stack, les dépendances ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1436/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Qnap QNE (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Qnap QNE n'est pas utilisé par DataLab et ne figure pas dans la stack ou l'environnement.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1437/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans macmon et NRSW (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Belden macmon et NRSW ne sont pas des composants de la stack, des dépendances ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1438/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans Traefik (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Traefik n'est pas mentionné dans la stack, les dépendances ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1439/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Edge (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Microsoft Edge n'est pas un composant de la stack, des dépendances ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1440/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Vulnérabilité dans Microsoft Visual Studio (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Microsoft Visual Studio n'est pas utilisé dans la stack, les dépendances ou l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1441/",
+      "source": "CERT-FR"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Ivanti Connect Secure (02 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Ivanti Connect Secure ne fait pas partie de la stack, des dépendances ou de l'environnement de DataLab.",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1442/",
+      "source": "CERT-FR"
+    }
+  ]
 }
