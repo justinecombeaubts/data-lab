@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-04",
+  "genere_le": "2026-11-04T12:50:19.283Z",
+  "digest": {
+    "categories": [
+      {
+        "categorie": "sécurité",
+        "articles": [
+          {
+            "titre": "Multiples vulnérabilités dans PostgreSQL (03 novembre 2026)",
+            "note": 10,
+            "categorie": "sécurité",
+            "raison": "Vulnérabilités PostgreSQL, base de données critique en production, nécessite mise à jour ou correctifs immédiats",
+            "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1445/",
+            "source": "CERT-FR",
+            "date": "2026-11-03T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "categorie": "conformité",
+        "articles": []
+      },
+      {
+        "categorie": "versions",
+        "articles": []
+      }
+    ],
+    "surprise": null,
+    "total_retenus": 1
+  },
+  "articles": [
+    {
+      "titre": "Multiples vulnérabilités dans Google Android (03 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Android, aucun impact sur la stack Python/Ubuntu/PostgreSQL de DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1443/",
+      "source": "CERT-FR",
+      "date": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans GLPI (03 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités GLPI, outil non utilisé par DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1444/",
+      "source": "CERT-FR",
+      "date": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans PostgreSQL (03 novembre 2026)",
+      "note": 10,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilités PostgreSQL, base de données critique en production, nécessite mise à jour ou correctifs immédiats",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1445/",
+      "source": "CERT-FR",
+      "date": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans NetApp ONTAP 9 (03 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités NetApp ONTAP, stockage non présent dans l'infrastructure de DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1446/",
+      "source": "CERT-FR",
+      "date": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Xen (03 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités Xen, hyperviseur non utilisé par DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1447/",
+      "source": "CERT-FR",
+      "date": "2026-11-03T00:00:00.000Z"
+    }
+  ],
+  "rapport": {
+    "sources": [
+      {
+        "source": "pandas · releases",
+        "url": "https://github.com/pandas-dev/pandas/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "numpy · releases",
+        "url": "https://github.com/numpy/numpy/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "scikit-learn · releases",
+        "url": "https://github.com/scikit-learn/scikit-learn/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CERT-FR",
+        "url": "https://cert.cyber.gouv.fr/avis/feed/",
+        "ok": true,
+        "count": 14
+      },
+      {
+        "source": "CNIL",
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "GitHub Blog · sécurité",
+        "url": "https://github.blog/security/feed/",
+        "ok": true,
+        "count": 0
+      }
+    ],
+    "analyses": 5,
+    "rejets": 0,
+    "lots_en_erreur": 0
+  }
+}
