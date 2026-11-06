@@ -1,11 +1,21 @@
 {
-  "date": "2026-11-05",
-  "genere_le": "2026-11-05T12:58:41.397Z",
+  "date": "2026-11-06",
+  "genere_le": "2026-11-06T12:46:28.159Z",
   "digest": {
     "categories": [
       {
         "categorie": "sécurité",
-        "articles": []
+        "articles": [
+          {
+            "titre": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
+            "note": 9,
+            "categorie": "sécurité",
+            "raison": "Vulnérabilité dans OpenSSH, composant clé des serveurs Linux Ubuntu, risque de contournement de la politique de sécurité",
+            "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/",
+            "source": "CERT-FR",
+            "date": "2026-11-05T00:00:00.000Z"
+          }
+        ]
       },
       {
         "categorie": "conformité",
@@ -13,192 +23,84 @@
       },
       {
         "categorie": "versions",
-        "articles": [
-          {
-            "titre": "pandas 3.1.1",
-            "note": 7,
-            "categorie": "versions",
-            "raison": "Publication de pandas 3.1.1, version majeure qui peut introduire des ruptures de compatibilité avec le code existant ; nécessite planification de migration mais pas d’adoption immédiate.",
-            "lien": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.1",
-            "source": "pandas · releases",
-            "date": "2026-11-04T15:46:25.000Z"
-          }
-        ]
+        "articles": []
       }
     ],
-    "surprise": {
-      "titre": "Outils de rejeu de session : la CNIL publie sa recommandation pour guider les acteurs",
-      "note": 6,
-      "categorie": "conformité",
-      "raison": "Recommandation officielle de la CNIL sur les outils de rejeu de session, fournit des directives concrètes à appliquer pour rester en conformité RGPD.",
-      "lien": "https://www.cnil.fr/fr/rejeu-de-session-recommandation",
-      "source": "CNIL",
-      "date": "2026-11-05T12:00:00.000Z"
-    },
+    "surprise": null,
     "total_retenus": 1
   },
   "articles": [
     {
-      "titre": "Rejeu de session : ces outils qui enregistrent votre activité en ligne",
-      "note": 5,
-      "categorie": "conformité",
-      "raison": "Article CNIL expliquant les outils de rejeu de session et les droits des utilisateurs, utile pour vérifier la conformité RGPD des pratiques de suivi de DataLab.",
-      "lien": "https://www.cnil.fr/fr/rejeu-de-session-vos-droits",
+      "titre": "Ordre du jour de la séance plénière du 5 novembre 2026",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Simple ordre du jour de la CNIL, aucune décision ou alerte RGPD concrète pour DataLab",
+      "lien": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-5-novembre-2026",
       "source": "CNIL",
       "date": "2026-11-05T12:00:00.000Z"
     },
     {
-      "titre": "Outils de rejeu de session : la CNIL publie sa recommandation pour guider les acteurs",
-      "note": 6,
-      "categorie": "conformité",
-      "raison": "Recommandation officielle de la CNIL sur les outils de rejeu de session, fournit des directives concrètes à appliquer pour rester en conformité RGPD.",
-      "lien": "https://www.cnil.fr/fr/rejeu-de-session-recommandation",
-      "source": "CNIL",
-      "date": "2026-11-05T12:00:00.000Z"
-    },
-    {
-      "titre": "pandas 3.1.1",
-      "note": 7,
-      "categorie": "versions",
-      "raison": "Publication de pandas 3.1.1, version majeure qui peut introduire des ruptures de compatibilité avec le code existant ; nécessite planification de migration mais pas d’adoption immédiate.",
-      "lien": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.1",
-      "source": "pandas · releases",
-      "date": "2026-11-04T15:46:25.000Z"
-    },
-    {
-      "titre": "Privacy for Kids : le CEPD lance une plateforme dédiée à la vie privée des enfants",
+      "titre": "Multiples vulnérabilités dans MongoDB (05 novembre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Initiative de sensibilisation à la vie privée des enfants, sans impact direct sur la stack ou les obligations de DataLab.",
-      "lien": "https://www.cnil.fr/fr/cepd-privacy-for-kids",
-      "source": "CNIL",
-      "date": "2026-11-04T12:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Apache Zookeeper (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités dans Apache Zookeeper, produit hors du périmètre technologique de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1448/",
+      "raison": "Vulnérabilités sur MongoDB, technologie non utilisée par DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1462/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits Citrix (04 novembre 2026)",
+      "titre": "Multiples vulnérabilités dans OpenOffice (05 novembre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités dans les produits Citrix, non utilisés par DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1449/",
+      "raison": "Vulnérabilités sur OpenOffice, hors du périmètre technique",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1463/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Google Chrome (04 novembre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Siemens (05 novembre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités dans Google Chrome, hors du périmètre de la stack serveur de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1450/",
+      "raison": "Vulnérabilités sur produits Siemens, non pertinents pour la stack",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1464/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans les produits HPE Aruba Networking (04 novembre 2026)",
+      "titre": "Multiples vulnérabilités dans SPIP (05 novembre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités dans les équipements HPE Aruba Networking, non pertinents pour l’infrastructure Python/Ubuntu de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1451/",
+      "raison": "Vulnérabilités sur SPIP, aucune corrélation avec l’infrastructure de DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1465/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans Ruby on Rails (04 novembre 2026)",
+      "titre": "Multiples vulnérabilités dans Microsoft Edge (05 novembre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités dans Ruby on Rails, technologie non utilisée par DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1452/",
+      "raison": "Vulnérabilités sur Microsoft Edge, navigateur non exploité dans les serveurs de production",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1466/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     },
     {
-      "titre": "Multiples vulnérabilités dans NetApp StorageGRID (04 novembre 2026)",
+      "titre": "Multiples vulnérabilités dans les produits Cisco (05 novembre 2026)",
       "note": 0,
       "categorie": "hors-sujet",
-      "raison": "Vulnérabilités dans NetApp StorageGRID, hors du périmètre technologique de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1453/",
+      "raison": "Vulnérabilités sur produits Cisco, hors du périmètre d’utilisation",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1467/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     },
     {
-      "titre": "Vulnérabilité dans MongoDB (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "MongoDB n'est pas dans la stack, les dépendances ou l'environnement de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1454/",
+      "titre": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
+      "note": 9,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilité dans OpenSSH, composant clé des serveurs Linux Ubuntu, risque de contournement de la politique de sécurité",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/",
       "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Vulnérabilité dans Mozilla Firefox (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Mozilla Firefox n'est pas utilisé dans la stack ou l'infrastructure de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1455/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits SonicWall (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Les produits SonicWall ne font pas partie de l'environnement serveur Linux de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1456/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Vulnérabilité dans Laravel (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Laravel n'est pas présent dans la stack Python de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1457/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits Mattermost (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Mattermost n'est pas utilisé par DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1458/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans SolarWinds Dameware (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "SolarWinds Dameware n'est pas dans l'environnement de production de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1459/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits Symfony (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Symfony n'est pas une technologie employée par DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1460/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits Elastic (04 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Elastic n'est pas présent dans la stack ou les dépendances de DataLab.",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1461/",
-      "source": "CERT-FR",
-      "date": "2026-11-04T00:00:00.000Z"
+      "date": "2026-11-05T00:00:00.000Z"
     }
   ],
   "rapport": {
@@ -225,13 +127,13 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 19
+        "count": 21
       },
       {
         "source": "CNIL",
         "url": "https://www.cnil.fr/fr/rss.xml",
         "ok": true,
-        "count": 3
+        "count": 4
       },
       {
         "source": "GitHub Blog · sécurité",
@@ -240,7 +142,7 @@
         "count": 0
       }
     ],
-    "analyses": 18,
+    "analyses": 8,
     "rejets": 0,
     "lots_en_erreur": 0
   }

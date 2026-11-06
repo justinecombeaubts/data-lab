@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-06",
+  "genere_le": "2026-11-06T12:46:28.159Z",
+  "digest": {
+    "categories": [
+      {
+        "categorie": "sécurité",
+        "articles": [
+          {
+            "titre": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
+            "note": 9,
+            "categorie": "sécurité",
+            "raison": "Vulnérabilité dans OpenSSH, composant clé des serveurs Linux Ubuntu, risque de contournement de la politique de sécurité",
+            "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/",
+            "source": "CERT-FR",
+            "date": "2026-11-05T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "categorie": "conformité",
+        "articles": []
+      },
+      {
+        "categorie": "versions",
+        "articles": []
+      }
+    ],
+    "surprise": null,
+    "total_retenus": 1
+  },
+  "articles": [
+    {
+      "titre": "Ordre du jour de la séance plénière du 5 novembre 2026",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Simple ordre du jour de la CNIL, aucune décision ou alerte RGPD concrète pour DataLab",
+      "lien": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-5-novembre-2026",
+      "source": "CNIL",
+      "date": "2026-11-05T12:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans MongoDB (05 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur MongoDB, technologie non utilisée par DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1462/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans OpenOffice (05 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur OpenOffice, hors du périmètre technique",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1463/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Siemens (05 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur produits Siemens, non pertinents pour la stack",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1464/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans SPIP (05 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur SPIP, aucune corrélation avec l’infrastructure de DataLab",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1465/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans Microsoft Edge (05 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur Microsoft Edge, navigateur non exploité dans les serveurs de production",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1466/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "titre": "Multiples vulnérabilités dans les produits Cisco (05 novembre 2026)",
+      "note": 0,
+      "categorie": "hors-sujet",
+      "raison": "Vulnérabilités sur produits Cisco, hors du périmètre d’utilisation",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1467/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "titre": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
+      "note": 9,
+      "categorie": "sécurité",
+      "raison": "Vulnérabilité dans OpenSSH, composant clé des serveurs Linux Ubuntu, risque de contournement de la politique de sécurité",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/",
+      "source": "CERT-FR",
+      "date": "2026-11-05T00:00:00.000Z"
+    }
+  ],
+  "rapport": {
+    "sources": [
+      {
+        "source": "pandas · releases",
+        "url": "https://github.com/pandas-dev/pandas/releases.atom",
+        "ok": true,
+        "count": 1
+      },
+      {
+        "source": "numpy · releases",
+        "url": "https://github.com/numpy/numpy/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "scikit-learn · releases",
+        "url": "https://github.com/scikit-learn/scikit-learn/releases.atom",
+        "ok": true,
+        "count": 0
+      },
+      {
+        "source": "CERT-FR",
+        "url": "https://cert.cyber.gouv.fr/avis/feed/",
+        "ok": true,
+        "count": 21
+      },
+      {
+        "source": "CNIL",
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "ok": true,
+        "count": 4
+      },
+      {
+        "source": "GitHub Blog · sécurité",
+        "url": "https://github.blog/security/feed/",
+        "ok": true,
+        "count": 0
+      }
+    ],
+    "analyses": 8,
+    "rejets": 0,
+    "lots_en_erreur": 0
+  }
+}
