@@ -1,76 +1,17 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "categories": {
-    "sécurité": [
-      {
-        "titre": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
-        "note": 9,
-        "categorie": "sécurité",
-        "raison": "Vulnérabilité dans OpenSSH, composant clé des serveurs Linux Ubuntu, risque de contournement de la politique de sécurité",
-        "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/",
-        "source": "CERT-FR"
-      }
-    ],
+    "sécurité": [],
     "conformité": [],
     "versions": []
   },
-  "surprise": null,
-  "ecartes": [
-    {
-      "titre": "Ordre du jour de la séance plénière du 5 novembre 2026",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Simple ordre du jour de la CNIL, aucune décision ou alerte RGPD concrète pour DataLab",
-      "lien": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-5-novembre-2026",
-      "source": "CNIL"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans MongoDB (05 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur MongoDB, technologie non utilisée par DataLab",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1462/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans OpenOffice (05 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur OpenOffice, hors du périmètre technique",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1463/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits Siemens (05 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur produits Siemens, non pertinents pour la stack",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1464/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans SPIP (05 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur SPIP, aucune corrélation avec l’infrastructure de DataLab",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1465/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans Microsoft Edge (05 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur Microsoft Edge, navigateur non exploité dans les serveurs de production",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1466/",
-      "source": "CERT-FR"
-    },
-    {
-      "titre": "Multiples vulnérabilités dans les produits Cisco (05 novembre 2026)",
-      "note": 0,
-      "categorie": "hors-sujet",
-      "raison": "Vulnérabilités sur produits Cisco, hors du périmètre d’utilisation",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1467/",
-      "source": "CERT-FR"
-    }
-  ]
+  "surprise": {
+    "titre": "Cybersécurité des collectivités territoriales : la CNIL prononce dix sanctions",
+    "note": 4,
+    "categorie": "conformité",
+    "raison": "Sanctions CNIL relatives à la cybersécurité des collectivités, illustrant un durcissement de la surveillance mais sans impact direct sur la stack ou les obligations de DataLab",
+    "lien": "https://www.cnil.fr/fr/sanctions-cybersecurite-collectivites-territoriales",
+    "source": "CNIL"
+  },
+  "ecartes": []
 }
