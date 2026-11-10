@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-09",
-  "genere_le": "2026-11-09T13:41:30.081Z",
+  "date": "2026-11-10",
+  "genere_le": "2026-11-10T13:19:05.203Z",
   "digest": {
     "categories": [
       {
@@ -16,28 +16,10 @@
         "articles": []
       }
     ],
-    "surprise": {
-      "titre": "Cybersécurité des collectivités territoriales : la CNIL prononce dix sanctions",
-      "note": 4,
-      "categorie": "conformité",
-      "raison": "Sanctions CNIL relatives à la cybersécurité des collectivités, illustrant un durcissement de la surveillance mais sans impact direct sur la stack ou les obligations de DataLab",
-      "lien": "https://www.cnil.fr/fr/sanctions-cybersecurite-collectivites-territoriales",
-      "source": "CNIL",
-      "date": "2026-11-09T12:00:00.000Z"
-    },
+    "surprise": null,
     "total_retenus": 0
   },
-  "articles": [
-    {
-      "titre": "Cybersécurité des collectivités territoriales : la CNIL prononce dix sanctions",
-      "note": 4,
-      "categorie": "conformité",
-      "raison": "Sanctions CNIL relatives à la cybersécurité des collectivités, illustrant un durcissement de la surveillance mais sans impact direct sur la stack ou les obligations de DataLab",
-      "lien": "https://www.cnil.fr/fr/sanctions-cybersecurite-collectivites-territoriales",
-      "source": "CNIL",
-      "date": "2026-11-09T12:00:00.000Z"
-    }
-  ],
+  "articles": [],
   "rapport": {
     "sources": [
       {
@@ -62,13 +44,13 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 0
+        "count": 6
       },
       {
         "source": "CNIL",
         "url": "https://www.cnil.fr/fr/rss.xml",
         "ok": true,
-        "count": 1
+        "count": 2
       },
       {
         "source": "GitHub Blog · sécurité",
@@ -77,8 +59,8 @@
         "count": 0
       }
     ],
-    "analyses": 1,
+    "analyses": 0,
     "rejets": 0,
-    "lots_en_erreur": 0
+    "lots_en_erreur": 1
   }
 }

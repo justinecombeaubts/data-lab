@@ -1,17 +1,10 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "categories": {
     "sécurité": [],
     "conformité": [],
     "versions": []
   },
-  "surprise": {
-    "titre": "Cybersécurité des collectivités territoriales : la CNIL prononce dix sanctions",
-    "note": 4,
-    "categorie": "conformité",
-    "raison": "Sanctions CNIL relatives à la cybersécurité des collectivités, illustrant un durcissement de la surveillance mais sans impact direct sur la stack ou les obligations de DataLab",
-    "lien": "https://www.cnil.fr/fr/sanctions-cybersecurite-collectivites-territoriales",
-    "source": "CNIL"
-  },
+  "surprise": null,
   "ecartes": []
 }
