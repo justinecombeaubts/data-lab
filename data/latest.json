@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-12",
-  "genere_le": "2026-11-12T13:35:50.068Z",
+  "date": "2026-11-13",
+  "genere_le": "2026-11-13T12:54:36.669Z",
   "digest": {
     "categories": [
       {
@@ -44,7 +44,7 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 11
+        "count": 28
       },
       {
         "source": "CNIL",
@@ -61,6 +61,6 @@
     ],
     "analyses": 0,
     "rejets": 0,
-    "lots_en_erreur": 2
+    "lots_en_erreur": 3
   }
 }
