@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-17",
-  "genere_le": "2026-11-17T14:10:55.274Z",
+  "date": "2026-11-18",
+  "genere_le": "2026-11-18T13:42:40.340Z",
   "digest": {
     "categories": [
       {
@@ -50,7 +50,7 @@
         "source": "CNIL",
         "url": "https://www.cnil.fr/fr/rss.xml",
         "ok": true,
-        "count": 1
+        "count": 3
       },
       {
         "source": "GitHub Blog · sécurité",
