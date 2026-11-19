@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-18",
-  "genere_le": "2026-11-18T13:42:40.340Z",
+  "date": "2026-11-19",
+  "genere_le": "2026-11-19T14:11:58.779Z",
   "digest": {
     "categories": [
       {
@@ -32,7 +32,7 @@
         "source": "numpy · releases",
         "url": "https://github.com/numpy/numpy/releases.atom",
         "ok": true,
-        "count": 1
+        "count": 0
       },
       {
         "source": "scikit-learn · releases",
@@ -44,7 +44,7 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 16
+        "count": 21
       },
       {
         "source": "CNIL",
@@ -61,6 +61,6 @@
     ],
     "analyses": 0,
     "rejets": 0,
-    "lots_en_erreur": 2
+    "lots_en_erreur": 3
   }
 }
