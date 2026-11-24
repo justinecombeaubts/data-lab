@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-23",
-  "genere_le": "2026-11-23T15:45:44.145Z",
+  "date": "2026-11-24",
+  "genere_le": "2026-11-24T15:37:03.176Z",
   "digest": {
     "categories": [
       {
@@ -44,13 +44,13 @@
         "source": "CERT-FR",
         "url": "https://cert.cyber.gouv.fr/avis/feed/",
         "ok": true,
-        "count": 9
+        "count": 16
       },
       {
         "source": "CNIL",
         "url": "https://www.cnil.fr/fr/rss.xml",
         "ok": true,
-        "count": 2
+        "count": 4
       },
       {
         "source": "GitHub Blog · sécurité",
